@@ -15,4 +15,4 @@ class GetBooksTest(unittest.TestCase):
     def test_successful_getbookssize(self):
 
         response = self.app.get('/books', headers={"Content-Type": "application/json"})
-        self.assertEqual(3, len(response.json['books']))
+        self.assertEqual(5, len(response.json['books']))

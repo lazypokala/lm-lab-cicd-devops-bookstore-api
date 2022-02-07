@@ -26,6 +26,18 @@ books = [{
         "bookDescription": "The overwhelming majority of a software system's lifespan is spent in use, not in design or implementation. So, why does conventional wisdom insist that software engineers focus primarily on the design and development of large-scale computing systems?",
         "bookAuthors" : "Betsy Beyer, Chris Jones, Jennifer Petoff"
     },
+    {
+        "bookTitle": "Building Microservices 2nd Edition" ,
+        "bookImage": "https://itbook.store/img/books/9781492034025.png",
+        "bookDescription": "As organizations shift from monolithic applications to smaller, self-contained microservices, distributed systems have become more fine-grained. This expanded second edition takes a holistic view of topics that you need to consider when building, managing, and scaling microservices architectures.",
+        "bookAuthors" : "Sam Newman"
+    },
+    {
+        "bookTitle": "Cloud Native Architecture and Design" ,
+        "bookImage": "https://itbook.store/img/books/9781484272251.png",
+        "bookDescription": "Build enterprise-grade cloud-native systems and learn all about cloud-native architecture and design. This book provides extensive in-depth details of patterns, tools, techniques, and processes with plenty of examples.",
+        "bookAuthors" : "Shivakumar R Goniwada"
+    }, 
 ]
 
 # Schema For the Book Request JSON
