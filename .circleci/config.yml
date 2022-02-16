@@ -2,6 +2,7 @@ version: 2.1
 
 orbs:
   python: circleci/python@1.5.0
+  aws-ecr: circleci/aws-ecr@7.3.0
 
 workflows:
   test-build-push-image:
@@ -9,4 +10,9 @@ workflows:
       - python/test:
           args: '--dev'
           pkg-manager: pipenv
-          test-tool: unittest 
+          test-tool: unittest
+      - aws-ecr/build-and-push-image:
+          repo: devops-bookstore-api
+          tag: '1.$CIRCLE_BUILD_NUM'
+          requires:
+            - "python/test"
